@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CineBot – Recomendador de Películas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      font-family: 'Roboto', sans-serif;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 30px 20px;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      color: #d1d1d1;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .genres {
+      margin-top: 20px;
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      padding: 20px;
+      width: 90%;
+      max-width: 500px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+
+    .genres h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    ul li {
+      margin: 8px 0;
+      font-size: 1.1rem;
+      padding: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🎬 CineBot</h1>
+    <p>Tu asistente virtual para elegir la película perfecta</p>
+  </header>
+
+  <main>
+    <div class="genres">
+      <h2>¿Qué tipo de película quieres ver hoy?</h2>
+      <ul>
+        <li>🔥 Acción y Aventura</li>
+        <li>😂 Comedia y Drama</li>
+        <li>👽 Ciencia ficción y Terror</li>
+        <li>🔍 Suspenso y Romance</li>
+        <li>🎨 Animación y Fantasía</li>
+      </ul>
+      <p style="margin-top: 15px; font-size: 0.95rem; color: #ccc;">Escribe uno de estos géneros en el chat para recibir una recomendación</p>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 CineBot - Proyecto educativo
+  </footer>
+
+  <!-- Chatbot Script -->
+  <script
+    src="https://unpkg.com/react-stackai@latest/dist/vanilla/vanilla-stackai.js"
+    data-project-url="https://www.stack-ai.com/embed/cd980238-96fc-41db-8dff-9f8ca9542f50/ed6e4ed2-753e-47ef-9735-0c739852c0dd/682414f68d7db10b1f06a814">
+  </script>
+</body>
+</html>
